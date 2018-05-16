@@ -91,3 +91,6 @@ Exception in thread "main" java.lang.NoSuchMethodError: scala.Predef$.refArrayOp
 Process finished with exit code 1
 ```
 - 修改 scale.version 为 2.3.1
+
+## 资料
+- 青芒的积累 - Gatling教程系列：https://segmentfault.com/blog/huzhiqiang?tag=gatling
