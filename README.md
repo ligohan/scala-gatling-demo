@@ -1,6 +1,7 @@
 ## Gatiling 安装
 - 下载：[官网下载链接](https://gatling.io/#/download)
 - 解压
+> - 如果使用 IntelliJ IDEA 运行测试，无需安装，可跳至 ```在 IntelliJ 安装 Scala``` 部分
 
 
 ## 首次运行
@@ -12,10 +13,16 @@
     - 执行的脚本序号：如 ```0```
     - 本次测试 Id ,用作测试报告命名前缀,不能包含空格，特殊字符，中文等：如 ```my_first_gatling```
     - 本次测试描述（非必须），会显示在报告头部：如 ```my_first_gatling```
+
 ![image.png](https://upload-images.jianshu.io/upload_images/11952792-c417957334ca1def.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 - 当输出以下信息则本次测试运行完毕
-![image.png](https://upload-images.jianshu.io/upload_images/11952792-407514f300f156e2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 - 最后一行路径即为本次测试的报告
+
+![image.png](https://upload-images.jianshu.io/upload_images/11952792-407514f300f156e2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+- 查看测试报告
+
 ![image.png](https://upload-images.jianshu.io/upload_images/11952792-2f1ea04338c7c2b9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 #### Record UI 操作
@@ -27,12 +34,16 @@
 
 #### 在 IntelliJ 安装 Scala 
 - 安装 Scala 插件
+
 ![image.png](https://upload-images.jianshu.io/upload_images/11952792-c84bc4036c458f24.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 - 新建一个 module
+
 ![image.png](https://upload-images.jianshu.io/upload_images/11952792-716af9f86a64b848.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 - 选择 Scala 类型
+
 ![image.png](https://upload-images.jianshu.io/upload_images/11952792-32f1ab1d1069886e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 - 下载 Scala SDK
+
 ![image.png](https://upload-images.jianshu.io/upload_images/11952792-b83ac1b455b2a3cd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 #### 根据 Maven Archetype 建立项目
