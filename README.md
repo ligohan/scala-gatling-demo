@@ -1,7 +1,7 @@
 ## Gatiling 安装
 - 下载：[官网下载链接](https://gatling.io/#/download)
 - 解压
-> - 如果使用 IntelliJ IDEA 运行测试，无需安装，可跳至 ```在 IntelliJ 安装 Scala``` 部分
+> - 如果使用 IntelliJ IDEA 运行测试，无需安装 Gatling，可跳至 ```在 IntelliJ 安装 Scala``` 部分
 
 
 ## 首次运行
