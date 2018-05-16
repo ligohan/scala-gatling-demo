@@ -47,8 +47,8 @@ class SimpleGet extends Simulation {
   /**
     * 4、设置线程数
     */
-  // setUp(scn.inject(rampUsers(500) over(10 seconds)).protocols(httpConf)) // 用 10 秒时间，平滑启动 5000 个线程
-  setUp(scn.inject(atOnceUsers(10)).protocols(httpConf)) // atOnceUsers：用户数（并发数）
+   setUp(scn.inject(rampUsers(500) over(10)).protocols(httpConf)) // 用 10 秒时间，平滑启动 5000 个线程
+//  setUp(scn.inject(atOnceUsers(10)).protocols(httpConf)) // atOnceUsers：用户数（并发数）
 
   /**
     * 5、运行 Engine.scala 开始压测
