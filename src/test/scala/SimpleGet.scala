@@ -41,7 +41,7 @@ class SimpleGet extends Simulation {
   {
      exec(http("/api/sys-user/list").get("/api/sys-user/list")) // exec() 里的参数就是我们的执行动作，http("本次请求的名称").get("本次http get请求的地址")
      .feed(arrayFeeder) // 加载 feed
-     .exec(http("/api/sys-user/save").get("/api/sys-user/login?login_name=${login_name}&email=${email}")) // 使用参数进行 get 请求
+     .exec(http("/api/sys-user/login").get("/api/sys-user/login?login_name=${login_name}&email=${email}")) // 使用参数进行 get 请求
   }
 
   /**
