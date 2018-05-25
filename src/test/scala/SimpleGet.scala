@@ -36,8 +36,8 @@ class SimpleGet extends Simulation {
     * 3、声明 Scenario，指定我们的请求动作
     */
   val scn = scenario("SimpleGetSimulation") // 脚本名称
-    .during(10)  // 运行 10 秒 during 默认单位秒,如果要用微秒 during(100 millisecond)
-    //.repeat(100) // 循环 100 次
+//    .during(100)  // 运行 10 秒 during 默认单位秒,如果要用微秒 during(100 millisecond)
+    .repeat(1000) // 循环 100 次
   {
      exec(http("/api/sys-user/list").get("/api/sys-user/list")) // exec() 里的参数就是我们的执行动作，http("本次请求的名称").get("本次http get请求的地址")
      .feed(arrayFeeder) // 加载 feed
@@ -47,8 +47,8 @@ class SimpleGet extends Simulation {
   /**
     * 4、设置线程数
     */
-   setUp(scn.inject(rampUsers(500) over(10)).protocols(httpConf)) // 用 10 秒时间，平滑启动 5000 个线程
-//  setUp(scn.inject(atOnceUsers(10)).protocols(httpConf)) // atOnceUsers：用户数（并发数）
+//   setUp(scn.inject(rampUsers(500) over(10)).protocols(httpConf)) // 用 10 秒时间，平滑启动 5000 个线程
+  setUp(scn.inject(atOnceUsers(100)).protocols(httpConf)) // atOnceUsers：用户数（并发数）
 
   /**
     * 5、运行 Engine.scala 开始压测
